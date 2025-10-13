@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitch Chinese Filter Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Twitch Chinese Filter</h1>
+    
+    <div class="setting-group">
+      <label class="switch">
+        <input type="checkbox" id="filterEnabled">
+        <span class="slider"></span>
+      </label>
+      <label for="filterEnabled">Enable Filter</label>
+    </div>
+
+    <div class="setting-group">
+      <label for="filterMode">Filter Mode:</label>
+      <select id="filterMode">
+        <option value="hide">Hide Messages</option>
+        <option value="blur">Blur Messages</option>
+      </select>
+    </div>
+
+    <div class="info">
+      <p>This extension filters messages containing Chinese characters in Twitch chat rooms.</p>
+    </div>
+
+    <div class="status" id="status"></div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

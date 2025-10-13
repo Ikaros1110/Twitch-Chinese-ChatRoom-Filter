@@ -1,0 +1,4 @@
+/* Styles for filtered messages */
+.chat-line__message[data-filtered="true"] {
+  transition: filter 0.3s ease;
+}
