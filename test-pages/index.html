@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mock Twitch Chat</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at top, rgba(248, 223, 160, 0.3), transparent 45%),
+          linear-gradient(180deg, #1f1912 0%, #2a2018 100%);
+        color: #fff8f1;
+      }
+
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 48px 20px;
+      }
+
+      form {
+        display: grid;
+        gap: 12px;
+        background: rgba(255, 248, 235, 0.08);
+        padding: 20px;
+        border-radius: 18px;
+        backdrop-filter: blur(10px);
+      }
+
+      textarea {
+        min-height: 120px;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 248, 235, 0.2);
+        padding: 14px;
+        font: inherit;
+        resize: vertical;
+      }
+
+      button {
+        justify-self: start;
+        border: none;
+        border-radius: 999px;
+        padding: 12px 16px;
+        font: inherit;
+        font-weight: 700;
+        background: #ffb84d;
+        color: #2b1e10;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Mock Twitch Chat</h1>
+      <form data-a-target="chat-input-form">
+        <label for="chat-input">Chat message</label>
+        <textarea id="chat-input" data-a-target="chat-input" aria-label="Chat message"></textarea>
+        <button type="submit" data-a-target="chat-send-button">Send</button>
+      </form>
+    </main>
+    <script type="module" src="./mock-chat.ts"></script>
+  </body>
+  </html>
