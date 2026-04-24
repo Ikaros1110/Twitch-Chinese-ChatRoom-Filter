@@ -1,0 +1,25 @@
+node_modules
+.output
+.wxt
+coverage
+playwright-report
+test-results
+
+# Local environment files
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS/editor clutter
+.DS_Store
+Thumbs.db
+
+# Local caches
+.cache
+.eslintcache
